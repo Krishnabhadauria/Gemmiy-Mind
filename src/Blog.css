@@ -1,0 +1,36 @@
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 35px;
+  padding: 20px;
+  max-height: calc(100vh - 50px); /* Maximum height minus navbar */
+}
+
+.blog-post {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* White background for each card */
+  border: 1px solid #b5a8a8; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 15px; /* Space between cards */
+  padding: 20px; /* Padding inside each card */
+  width: 75%; /* Fixed width for consistency */
+  transition: transform 0.2s; /* Smooth transform on hover */
+}
+
+.blog-post h2 {
+  margin-top: 0; /* Remove top margin from the heading */
+  font-size: 20px; /* Font size for the title */
+  color: #333; /* Darker color for the title */
+}
+
+.blog-post p {
+  color: #555; /* Medium grey for the content text */
+  line-height: 1.5; /* Line height for better readability */
+}

@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif; /* Font family for the body */
+  background-color: #f0f2f5; /* Background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  width: 400px; /* Reduced width for a more compact design */
+  max-width: 100%; /* Responsive max width */
+  background-color: #ffffff; /* Background color for the container */
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Softer shadow effect */
+  padding: 20px; /* Inner padding */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Chatbot Title */
+.chatbot-title {
+  text-align: center; /* Center text */
+  font-size: 26px; /* Slightly smaller font size */
+  color: #333; /* Text color */
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Chatbot Messages */
+.chatbot-messages {
+  border: 1px solid #ddd; /* Border around messages */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  margin-bottom: 20px; /* Space below messages */
+  max-height: 300px; /* Max height for scrolling */
+  overflow-y: auto; /* Scroll if overflow */
+  background-color: #fafafa; /* Background color for messages */
+}
+
+/* Individual Message */
+.chatbot-message {
+  margin-bottom: 12px; /* Space below each message */
+  padding: 10px; /* Inner padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 15px; /* Font size */
+  max-width: 80%; /* Max width for messages */
+  word-wrap: break-word; /* Wrap long words */
+  position: relative; /* Position for pseudo-elements */
+}
+
+/* User and Assistant Messages */
+.chatbot-message.user {
+  background-color: #e1f5fe; /* Light blue for user messages */
+  align-self: flex-start; /* Align to the left */
+  border-left: 4px solid #2196f3; /* Blue left border for user messages */
+}
+
+.chatbot-message.assistant {
+  background-color: #c8e6c9; /* Light green for assistant messages */
+  align-self: flex-end; /* Align to the right */
+  border-right: 4px solid #4caf50; /* Green right border for assistant messages */
+}
+
+/* Chatbot Form */
+.chatbot-form {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between input and button */
+}
+
+/* Chatbot Input */
+.chatbot-input {
+  flex: 1; /* Expand to fill available space */
+  padding: 20px; /* Inner padding */
+  font-size: 16px; /* Font size */
+  border-radius: 25px; /* Rounded corners */
+  border: 1px solid #ccc; /* Gray border */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s; /* Smooth transition */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+/* Focus State for Input */
+.chatbot-input:focus {
+  border-color: #2196f3; /* Change border color on focus */
+}
+
+/* Chatbot Button */
+.chatbot-button {
+  padding: 12px 20px; /* Inner padding */
+  font-size: 16px; /* Font size */
+  background-color: #2196f3; /* Primary blue */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Button Hover State */
+.chatbot-button:hover {
+  background-color: #1976d2; /* Darker blue on hover */
+  transform: translateY(-1px); /* Slight lift effect on hover */
+}
+
+/* Code Block Styles */
+.code-block {
+  background-color: #f4f4f4; /* Background color for code block */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  margin-top: 10px; /* Space above code block */
+  overflow-x: auto; /* Scroll if overflow */
+}
+
+/* Code Styles */
+.code-block code {
+  font-family: "Courier New", monospace; /* Monospace font for code */
+  color: #d63384; /* Color for code text */
+}
