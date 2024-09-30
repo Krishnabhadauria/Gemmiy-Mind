@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './MoodTracker.css';
 
 const moodQuestions = [
@@ -17,6 +17,7 @@ const moodQuestions = [
 function MoodTracker() {
   const [moodEvaluation, setMoodEvaluation] = useState('');
   const [message, setMessage] = useState('');
+  const resultRef = useRef(null); // Create a reference for the result section
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -40,6 +41,9 @@ function MoodTracker() {
 
     setMoodEvaluation(evaluation);
     setMessage(msg);
+
+    // Scroll to the result section after submission
+    resultRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -65,7 +69,7 @@ function MoodTracker() {
         </form>
       </div>
       {moodEvaluation && (
-        <div className="evaluation">
+        <div ref={resultRef} className="evaluation">
           <h3>Mood Evaluation:</h3>
           <p>{moodEvaluation}</p>
           <p>{message}</p>
