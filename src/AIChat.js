@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./Chatbot.css";
 
-const geminiApiKey = "GEMINI_API_KEY"; // Your API Key
+const geminiApiKey = "AIzaSyC4K1cdCB2cfELd0McoYDLLlTS5-7Z7Ld4"; // Your API Key
 
 const geminiClient = axios.create({
   headers: {
